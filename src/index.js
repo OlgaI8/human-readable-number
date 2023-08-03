@@ -54,7 +54,7 @@ module.exports = function toReadable(number) {
             text2 = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'][digit[2]];
         }
         text = `${text1} hundred ${text2}`;
-    } else if (number < 1000) {
+    } else if (number == 120 || number == 130 || number == 140 || number == 150 || number == 160 || number == 170 || number == 180 || number == 190 || number == 220 || number == 230 || number == 240 || number == 250 || number == 260 || number == 270 || number == 280 || number == 290 || number == 320 || number == 330 || number == 340 || number == 350 || number == 360 || number == 370 || number == 380 || number == 390 || number == 420 || number == 430 || number == 440 || number == 450 || number == 460 || number == 470 || number == 480 || number == 490 || number == 520 || number == 530 || number == 540 || number == 550 || number == 560 || number == 570 || number == 580 || number == 590 || number == 620 || number == 630 || number == 640 || number == 650 || number == 660 || number == 670 || number == 680 || number == 690 || number == 720 || number == 730 || number == 740 || number == 750 || number == 760 || number == 770 || number == 780 || number == 790 || number == 820 || number == 830 || number == 840 || number == 850 || number == 860 || number == 870 || number == 880 || number == 890 || number == 920 || number == 930 || number == 940 || number == 950 || number == 960 || number == 970 || number == 980 || number == 990) {
         let digit = String(number).split('');
         let text1;
         let text2;
