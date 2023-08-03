@@ -58,6 +58,17 @@ module.exports = function toReadable(number) {
         let digit = String(number).split('');
         let text1;
         let text2;
+        if (digit[0] == 1 || digit[0] == 2 || digit[0] == 3 || digit[0] == 4 || digit[0] == 5 || digit[0] == 6 || digit[0] == 7 || digit[0] == 8 || digit[0] == 9) {
+            text1 = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'][digit[0] - 1];
+        }
+        if ((digit[1] == 2 && digit[2] == 0) || (digit[1] == 3 && digit[2] == 0) || (digit[1] == 4 && digit[2] == 0) || (digit[1] == 5 && digit[2] == 0) || (digit[1] == 6 && digit[2] == 0) || (digit[1] == 7 && digit[2] == 0) || (digit[1] == 8 && digit[2] == 0) || (digit[1] == 9 && digit[2] == 0)) {
+            text2 = ['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'][digit[1] - 2];
+        }
+        text = `${text1} hundred ${text2}`;
+    } else if (number < 1000) {
+        let digit = String(number).split('');
+        let text1;
+        let text2;
         let text3;
         if (digit[0] == 1 || digit[0] == 2 || digit[0] == 3 || digit[0] == 4 || digit[0] == 5 || digit[0] == 6 || digit[0] == 7 || digit[0] == 8 || digit[0] == 9) {
             text1 = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'][digit[0] - 1];
